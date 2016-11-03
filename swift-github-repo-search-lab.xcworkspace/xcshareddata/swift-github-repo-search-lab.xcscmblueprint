@@ -1,0 +1,37 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "FFDF659461A68EDAE22F039D6B488ABC3648625A",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "06649D52107DFCA17A7115DDE658AD2647A3A829" : 9223372036854775807,
+    "FFDF659461A68EDAE22F039D6B488ABC3648625A" : 9223372036854775807,
+    "67620B5EFA902936DF04070AF595B76AB0333747" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "B8B31043-076A-4B62-A0F6-C5D5EF5BC82D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "06649D52107DFCA17A7115DDE658AD2647A3A829" : "github-repo-starring-swift-ios-0916\/",
+    "FFDF659461A68EDAE22F039D6B488ABC3648625A" : "swift-github-repo-search-lab-ios-0916\/",
+    "67620B5EFA902936DF04070AF595B76AB0333747" : "swift-github-repo-search-lab-ios-0916\/Alamofire\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "swift-github-repo-search-lab",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "swift-github-repo-search-lab.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:ixyzt\/github-repo-starring-swift-ios-0916.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "06649D52107DFCA17A7115DDE658AD2647A3A829"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Alamofire\/Alamofire.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "67620B5EFA902936DF04070AF595B76AB0333747"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:ixyzt\/swift-github-repo-search-lab-ios-0916.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "FFDF659461A68EDAE22F039D6B488ABC3648625A"
+    }
+  ]
+}

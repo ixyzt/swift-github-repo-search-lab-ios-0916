@@ -7,27 +7,111 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1B15A1391DC29F9D00B15C9F /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B15A1381DC29F9D00B15C9F /* Secrets.swift */; };
 		1B15A13D1DC2A09900B15C9F /* not_starred.json in Resources */ = {isa = PBXBuildFile; fileRef = 1B15A13B1DC2A09900B15C9F /* not_starred.json */; };
 		1B15A13E1DC2A09900B15C9F /* repositories.json in Resources */ = {isa = PBXBuildFile; fileRef = 1B15A13C1DC2A09900B15C9F /* repositories.json */; };
-		1BF884A81DBE950C001E9E9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF884A71DBE950C001E9E9B /* AppDelegate.swift */; };
-		1BF884AA1DBE950C001E9E9B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF884A91DBE950C001E9E9B /* ViewController.swift */; };
 		1BF884AF1DBE950C001E9E9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BF884AE1DBE950C001E9E9B /* Assets.xcassets */; };
 		1BF884B21DBE950C001E9E9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BF884B01DBE950C001E9E9B /* LaunchScreen.storyboard */; };
+		7530B1591DCA0FDC004B86B1 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7530B14C1DCA0DCF004B86B1 /* Alamofire.framework */; };
+		7530B15A1DCA0FDC004B86B1 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7530B14C1DCA0DCF004B86B1 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7530B1661DCA2C73004B86B1 /* GithubAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7530B1651DCA2C73004B86B1 /* GithubAPIClient.swift */; };
+		7530B16F1DCA2DB6004B86B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7530B16E1DCA2DB6004B86B1 /* AppDelegate.swift */; };
+		7530B1711DCA2DF6004B86B1 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7530B1701DCA2DF6004B86B1 /* Secrets.swift */; };
+		7530B17B1DCA3170004B86B1 /* ReposDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7530B17A1DCA3170004B86B1 /* ReposDataStore.swift */; };
+		7530B17D1DCA317E004B86B1 /* ReposTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7530B17C1DCA317E004B86B1 /* ReposTableViewController.swift */; };
+		7530B17F1DCA31BA004B86B1 /* GithubRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7530B17E1DCA31BA004B86B1 /* GithubRepository.swift */; };
+		7530B1881DCA32DB004B86B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7530B1861DCA32DB004B86B1 /* Main.storyboard */; };
 		FDE5A2D855483A3DBDB88CB6 /* Pods_swift_github_repo_search_lab.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB903D33600997305EE0760B /* Pods_swift_github_repo_search_lab.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		7530B14B1DCA0DCF004B86B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7530B1401DCA0DCE004B86B1 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+		7530B14D1DCA0DCF004B86B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7530B1401DCA0DCE004B86B1 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS Tests";
+		};
+		7530B14F1DCA0DCF004B86B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7530B1401DCA0DCE004B86B1 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4DD67C0B1A5C55C900ED2280;
+			remoteInfo = "Alamofire macOS";
+		};
+		7530B1511DCA0DCF004B86B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7530B1401DCA0DCE004B86B1 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F829C6B21A7A94F100A2CD59;
+			remoteInfo = "Alamofire macOS Tests";
+		};
+		7530B1531DCA0DCF004B86B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7530B1401DCA0DCE004B86B1 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626EF1BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS";
+		};
+		7530B1551DCA0DCF004B86B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7530B1401DCA0DCE004B86B1 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626F81BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS Tests";
+		};
+		7530B1571DCA0DCF004B86B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7530B1401DCA0DCE004B86B1 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4202FE01B667AA100C997FB;
+			remoteInfo = "Alamofire watchOS";
+		};
+		7530B15B1DCA0FDC004B86B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7530B1401DCA0DCE004B86B1 /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7530B15D1DCA0FDC004B86B1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7530B15A1DCA0FDC004B86B1 /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		06179FC97D4CCA9AF9531AF7 /* Pods-swift-github-repo-search-lab.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift-github-repo-search-lab.debug.xcconfig"; path = "Pods/Target Support Files/Pods-swift-github-repo-search-lab/Pods-swift-github-repo-search-lab.debug.xcconfig"; sourceTree = "<group>"; };
-		1B15A1381DC29F9D00B15C9F /* Secrets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
 		1B15A13B1DC2A09900B15C9F /* not_starred.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = not_starred.json; sourceTree = "<group>"; };
 		1B15A13C1DC2A09900B15C9F /* repositories.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = repositories.json; sourceTree = "<group>"; };
 		1BF884A41DBE950C001E9E9B /* swift-github-repo-search-lab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift-github-repo-search-lab.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1BF884A71DBE950C001E9E9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1BF884A91DBE950C001E9E9B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1BF884AE1DBE950C001E9E9B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1BF884B11DBE950C001E9E9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1BF884B31DBE950C001E9E9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7530B1401DCA0DCE004B86B1 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
+		7530B1651DCA2C73004B86B1 /* GithubAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubAPIClient.swift; sourceTree = "<group>"; };
+		7530B16E1DCA2DB6004B86B1 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7530B1701DCA2DF6004B86B1 /* Secrets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
+		7530B17A1DCA3170004B86B1 /* ReposDataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReposDataStore.swift; sourceTree = "<group>"; };
+		7530B17C1DCA317E004B86B1 /* ReposTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReposTableViewController.swift; sourceTree = "<group>"; };
+		7530B17E1DCA31BA004B86B1 /* GithubRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubRepository.swift; sourceTree = "<group>"; };
+		7530B1871DCA32DB004B86B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BA7C84CC2EF21A27A02CA364 /* Pods-swift-github-repo-search-lab.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift-github-repo-search-lab.release.xcconfig"; path = "Pods/Target Support Files/Pods-swift-github-repo-search-lab/Pods-swift-github-repo-search-lab.release.xcconfig"; sourceTree = "<group>"; };
 		EB903D33600997305EE0760B /* Pods_swift_github_repo_search_lab.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swift_github_repo_search_lab.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -38,6 +122,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDE5A2D855483A3DBDB88CB6 /* Pods_swift_github_repo_search_lab.framework in Frameworks */,
+				7530B1591DCA0FDC004B86B1 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +152,7 @@
 		1BF8849B1DBE950C001E9E9B = {
 			isa = PBXGroup;
 			children = (
+				7530B1401DCA0DCE004B86B1 /* Alamofire.xcodeproj */,
 				1BF884A61DBE950C001E9E9B /* swift-github-repo-search-lab */,
 				1BF884A51DBE950C001E9E9B /* Products */,
 				A858EED9E6F26A80C197D558 /* Pods */,
@@ -85,12 +171,30 @@
 		1BF884A61DBE950C001E9E9B /* swift-github-repo-search-lab */ = {
 			isa = PBXGroup;
 			children = (
-				1BF884A71DBE950C001E9E9B /* AppDelegate.swift */,
-				1BF884A91DBE950C001E9E9B /* ViewController.swift */,
-				1B15A1381DC29F9D00B15C9F /* Secrets.swift */,
+				7530B16E1DCA2DB6004B86B1 /* AppDelegate.swift */,
+				7530B1651DCA2C73004B86B1 /* GithubAPIClient.swift */,
+				7530B17E1DCA31BA004B86B1 /* GithubRepository.swift */,
+				7530B17A1DCA3170004B86B1 /* ReposDataStore.swift */,
+				7530B17C1DCA317E004B86B1 /* ReposTableViewController.swift */,
+				7530B1701DCA2DF6004B86B1 /* Secrets.swift */,
+				7530B1861DCA32DB004B86B1 /* Main.storyboard */,
 				1B15A13A1DC29FA500B15C9F /* Resources */,
 			);
 			path = "swift-github-repo-search-lab";
+			sourceTree = "<group>";
+		};
+		7530B1411DCA0DCE004B86B1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7530B14C1DCA0DCF004B86B1 /* Alamofire.framework */,
+				7530B14E1DCA0DCF004B86B1 /* Alamofire iOS Tests.xctest */,
+				7530B1501DCA0DCF004B86B1 /* Alamofire.framework */,
+				7530B1521DCA0DCF004B86B1 /* Alamofire macOS Tests.xctest */,
+				7530B1541DCA0DCF004B86B1 /* Alamofire.framework */,
+				7530B1561DCA0DCF004B86B1 /* Alamofire tvOS Tests.xctest */,
+				7530B1581DCA0DCF004B86B1 /* Alamofire.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		A858EED9E6F26A80C197D558 /* Pods */ = {
@@ -115,10 +219,12 @@
 				1BF884A21DBE950C001E9E9B /* Resources */,
 				DF305EFCFAE7C62AFBB444A8 /* [CP] Embed Pods Frameworks */,
 				F94774A725A457C9E6ED017A /* [CP] Copy Pods Resources */,
+				7530B15D1DCA0FDC004B86B1 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				7530B15C1DCA0FDC004B86B1 /* PBXTargetDependency */,
 			);
 			name = "swift-github-repo-search-lab";
 			productName = "swift-github-repo-search-lab";
@@ -153,6 +259,12 @@
 			mainGroup = 1BF8849B1DBE950C001E9E9B;
 			productRefGroup = 1BF884A51DBE950C001E9E9B /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 7530B1411DCA0DCE004B86B1 /* Products */;
+					ProjectRef = 7530B1401DCA0DCE004B86B1 /* Alamofire.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				1BF884A31DBE950C001E9E9B /* swift-github-repo-search-lab */,
@@ -160,12 +272,65 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		7530B14C1DCA0DCF004B86B1 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 7530B14B1DCA0DCF004B86B1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7530B14E1DCA0DCF004B86B1 /* Alamofire iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire iOS Tests.xctest";
+			remoteRef = 7530B14D1DCA0DCF004B86B1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7530B1501DCA0DCF004B86B1 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 7530B14F1DCA0DCF004B86B1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7530B1521DCA0DCF004B86B1 /* Alamofire macOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire macOS Tests.xctest";
+			remoteRef = 7530B1511DCA0DCF004B86B1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7530B1541DCA0DCF004B86B1 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 7530B1531DCA0DCF004B86B1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7530B1561DCA0DCF004B86B1 /* Alamofire tvOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire tvOS Tests.xctest";
+			remoteRef = 7530B1551DCA0DCF004B86B1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7530B1581DCA0DCF004B86B1 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 7530B1571DCA0DCF004B86B1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		1BF884A21DBE950C001E9E9B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				1BF884B21DBE950C001E9E9B /* LaunchScreen.storyboard in Resources */,
+				7530B1881DCA32DB004B86B1 /* Main.storyboard in Resources */,
 				1B15A13E1DC2A09900B15C9F /* repositories.json in Resources */,
 				1BF884AF1DBE950C001E9E9B /* Assets.xcassets in Resources */,
 				1B15A13D1DC2A09900B15C9F /* not_starred.json in Resources */,
@@ -187,7 +352,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		DF305EFCFAE7C62AFBB444A8 /* [CP] Embed Pods Frameworks */ = {
@@ -227,13 +392,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1BF884AA1DBE950C001E9E9B /* ViewController.swift in Sources */,
-				1B15A1391DC29F9D00B15C9F /* Secrets.swift in Sources */,
-				1BF884A81DBE950C001E9E9B /* AppDelegate.swift in Sources */,
+				7530B17F1DCA31BA004B86B1 /* GithubRepository.swift in Sources */,
+				7530B16F1DCA2DB6004B86B1 /* AppDelegate.swift in Sources */,
+				7530B1711DCA2DF6004B86B1 /* Secrets.swift in Sources */,
+				7530B1661DCA2C73004B86B1 /* GithubAPIClient.swift in Sources */,
+				7530B17B1DCA3170004B86B1 /* ReposDataStore.swift in Sources */,
+				7530B17D1DCA317E004B86B1 /* ReposTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7530B15C1DCA0FDC004B86B1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire iOS";
+			targetProxy = 7530B15B1DCA0FDC004B86B1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		1BF884B01DBE950C001E9E9B /* LaunchScreen.storyboard */ = {
@@ -242,6 +418,14 @@
 				1BF884B11DBE950C001E9E9B /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		7530B1861DCA32DB004B86B1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7530B1871DCA32DB004B86B1 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -344,6 +528,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 06179FC97D4CCA9AF9531AF7 /* Pods-swift-github-repo-search-lab.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = KXY9EDFTF5;
 				INFOPLIST_FILE = "swift-github-repo-search-lab/Info.plist";
@@ -358,6 +543,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BA7C84CC2EF21A27A02CA364 /* Pods-swift-github-repo-search-lab.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = KXY9EDFTF5;
 				INFOPLIST_FILE = "swift-github-repo-search-lab/Info.plist";
